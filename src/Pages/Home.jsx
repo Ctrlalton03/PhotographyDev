@@ -51,6 +51,18 @@ const Home = () => {
 
             
         </div>
+        <div className='home-container-3'>
+            <h1>Capturing Moments: <br /> A Glimpse into my work</h1>
+            <div className='home-content-3'>
+                <img className='home-image-3' alt="home-image" />
+                <div className='home-text-3'>
+                    <p>Date</p>
+                    <p>Location</p>
+                </div>
+                <button className='gallery-button-2'><Link to="/Gallery">View My Portfolio</Link></button>
+            </div>
+            
+        </div>
         </>
     )
 }
