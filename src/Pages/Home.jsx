@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import '../Css/Home.css'
 import homeImage from '../Images/DSC05809.jpg'
 import CityBuilding from '../Images/CityBuilding.jpg'
+import PhotoSlider from '../Componets/PhotoSlider'
 
 const Home = () => {
     return (
@@ -55,15 +56,11 @@ const Home = () => {
         <div className='home-container-3'>
             <h1>Capturing Moments: <br /> A Glimpse into my work</h1>
             <div className='home-content-3'>
-                <img className='home-image-3' alt="home-image" src={CityBuilding}/>
-                <div className='home-text-3'>
-                    <p>Date</p>
-                    <p>Location</p>
-                </div>
+               <PhotoSlider />  
+            </div>
                 <button className='gallery-button-2'><Link to="/Gallery">View My Portfolio</Link></button>
             </div>
             
-        </div>
         </>
     )
 }

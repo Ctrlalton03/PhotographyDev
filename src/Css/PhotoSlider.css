@@ -1,0 +1,40 @@
+
+.photo-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-slider img {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow:   0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider-controls {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+
+
+
+.slider-controls button {
+  background-color: #FDF0D5;
+  color: #C1121F;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.slider-controls button:hover {
+  background-color: #C1121F;
+  color: #FDF0D5;
+}

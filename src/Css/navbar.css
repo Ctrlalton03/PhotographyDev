@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+@font-face {
+    font-family: Futura;
+    src: url('../Fonts/Futura.ttc');
+}
+
+
+
+
+.navbar-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #FDF0D5;
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003049;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: none;
+  gap: 2rem;
+}
+
+
+.navbar-nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgb(212, 212, 216); /* zinc-300 */
+  transition: color 0.2s ease;
+}
+
+.navbar-nav-link:hover {
+  color: white;
+}
+
+.navbar-menu-button {
+  color:  rgb(44, 94, 255);
+  display: flex;
+}
+
+.navbar-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FDF0D5;
+  z-index: 50;
+  padding: 2rem;
+}
+
+.navbar-mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.navbar-mobile-menu-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #5757ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar-mobile-menu-link:hover {
+  color:  rgb(44, 94, 255);
+}
+
+.navbar-menu-button {
+  color: #C1121F;
+  background-color: #FDF0D5;
+  border: none;
+  font-size: 1.5rem;
+  width: 10%;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-button:hover {
+  color:  rgb(44, 94, 255);
+}
+
+.navbar-mobile-menu-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #C1121F;
+  transition: all 0.2s ease;
+}
+
+.navbar-mobile-menu-close:hover {
+  color: #ffffff;
+  background-color: #27272a;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    padding: 0 1rem;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-menu-button {
+    display: none;
+  }
+
+}
